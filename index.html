@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukul Fitness</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /* CSS reset  */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/background.jpg.jpg');
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 156px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 16px;
+        font-size: 23px;
+    }
+
+    .mid {
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 53px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 13px;
+        font-family: cursive;
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 30px 16px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 5px 12px;
+        border: 2px solid gray;
+        border-radius: 7px;
+        font-size: 13px;
+        cursor: pointer;
+        font-family: cursive;
+    }
+
+    .btn:hover {
+        background-color: rgb(192, 160, 160);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 101px 371px;
+        padding: 14px 8px;
+        width: 46%;
+        border-radius: 30px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 446px;
+        padding: 9px;
+        border: 2px solid black;
+        margin: 7px auto;
+        font-size: 18px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 41%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header"></header>
+    <!-- left box for logo -->
+    <div class="left">
+        <img src="img/logo.jpg.jpg" alt="">
+        <div>Mukul Fitness</div>
+    </div>
+    <!-- mid box for navbar -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <!-- right box for buttons -->
+    <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us Now</button>
+    </div>
+    <div class="container">
+        <h1>JOIN THE BEST GYM OF U.P. NOW</h1>
+        <form onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" id="age" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" id="city" placeholder="Enter Your Town">
+            </div>
+            <div class="form-group">
+                <input type="phone" id="phone" placeholder="Enter Your Mobile Number">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+            <button type="reset" class="btn">Reset</button>
+        </form>
+    </div>
+</body>
+<script src="./JS/api.js"></script>
+
+</html>
